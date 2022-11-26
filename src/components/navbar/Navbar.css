@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+.nomeLogotipo {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 3.2rem;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.logoCont {
+    display: flex;
+}
+
+.boxNavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 8rem;
+    border-bottom: 1px solid #141F33;
+}
+
+.navBarLinks{
+    font-size: 1.6rem;
+    list-style-type: none;
+}
+
+.link{
+    transition: all 0.4s ease-in-out;
+    display: inline;
+    padding: 0 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.link a {
+    transition: all 0.4s ease-in-out;
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.link:hover{
+    font-weight: bold;
+}
+
+.fotoPerfil{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.boxNavbar div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.buttonCadastro{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #DAA520;
+    padding: 0 2.2rem;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+    height: 48px;
+}
+
+.buttonCadastro:hover{
+    background-color: #fff;
+    color: #141F33;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    .boxNavbar {
+      display: flex;
+      flex-direction: column;
+    }
+}

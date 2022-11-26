@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+
+.boxInicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+    z-index: 0;
+}
+
+.boxInicio .box{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+}
+
+.boxInicio .box div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.boxInicio .box div .subtitulo{
+    font-family: 'Consolas', sans-serif;
+    font-size: 1.6rem;
+    color: var(--verde-primario);
+    margin-left: 0rem;
+}
+
+.titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.8rem;
+    margin: 0px;
+    color: #DAA520;
+}
+
+.imagemLado{
+    height: 300px;
+    width: 380px;
+    background-image: url('../../../img/avatarRobo.png');
+    background-repeat: no-repeat;
+}
+
+.textoApresentacao {
+    text-align: center;    
+}
+
+/* COMEÇO da seção de SOBRE a empresa */ 
+
+.boxSobreRob3 {
+    margin-top: 6.4rem;
+    background-color: #fff;
+    color: var(--background-primario);
+    padding: 4.8rem 80px 4.8rem 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 999999999999;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.boxSobreRob3 .box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.boxSobreRob3 .boxSobreTextoPrincipal h2{
+    margin-bottom: 1.6rem;
+}
+
+.boxSobreRob3 .boxSobreTextoPrincipal{
+    max-width: 480px;
+    text-align: left;
+}
+
+.tituloSobre{
+    color: #DAA520;
+    text-transform:uppercase;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* FIM da seção de SOBRE a empresa */
+
+/* Comeco Efeito de luz */
+
+.EfeitoDeLuz{
+    width: 600px;
+    height: 600px;
+    left: -227px;
+    top: 600px;
+    background: radial-gradient(76.32% 80.23% at 35.83% 47.38%, #0057FF 18.83%, rgba(0, 87, 255, 0) 70.83%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    filter: blur(280px);
+
+    z-index: -100;
+    position: absolute;
+}
+
+/* FIM Efeito de luz */
+
+@media screen and (max-width: 900px) {
+    .box {
+      margin-top: 50px;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .infosLado{
+        margin-top: 50px;
+        width: 90%;
+    }
+    .infosLado .boxInfos{
+        width: 100%;
+    }
+}

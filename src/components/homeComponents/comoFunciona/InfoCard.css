@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+
+
+.contInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.contInfo p {
+    font-family: "Roboto mono", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 8px 0;
+    
+}

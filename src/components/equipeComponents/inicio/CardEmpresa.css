@@ -1,0 +1,45 @@
+.contCard {
+    display: flex;
+    justify-content: center;
+    width: 470px;
+    height: 130px;
+    background-color: #041029;
+    border: 1px solid #0057FF;
+    border-radius: 4px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.btnCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: #011236;
+    border-radius: 65px;
+    position: absolute;
+    top: -20px;
+}
+
+.btnCard p {
+    font-family: "Roboto Mono", sans-serif;
+    color: #0057FF;
+}
+
+.textCard {
+    display: flex;
+    align-items: center;
+}
+
+.textCard p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+

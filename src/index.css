@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 65.5%; 
+  color: #FFFF;
+  /* 10px */
+}
+
+body {
+  font-size: 1rem;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1B1F22;
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin: 0px;   
+}
+
+h1, h2, h3, h4{
+  margin: 0px;
+}
+
+h1{
+  font-size: 4.8rem;
+}
+
+h2{
+  font-size: 3.6rem;
+}
+
+h3{
+  font-size: 1.8rem;
+  
+}
+
+.nomeLogotipo{
+  color: aquamarine;
+}

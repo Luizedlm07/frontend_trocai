@@ -1,0 +1,64 @@
+.boxCardCurso{
+    background-color: var(--background-secundario);
+    padding: 2.2rem;
+    border: 1px solid transparent;
+    width: 228px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.descricaoCardCurso{
+    font-size: 1.2rem;
+    line-height: 170%;
+    text-align: justify;
+}
+
+.boxCardCurso.frontEnd:hover{
+    border: 1px solid var(--rosa-primario);
+    top: -20px;
+}
+
+.backEnd:hover{
+    border: 1px solid var(--verde-primario);
+    top: -20px;
+}
+
+.infra:hover{
+    border: 1px solid var(--azul-primario);
+    top: -20px;
+}
+
+.frontEnd .subtituloCardCurso{
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--rosa-primario);
+}
+
+.backEnd .subtituloCardCurso{
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--verde-primario);
+}
+
+.infra .subtituloCardCurso{
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono', sans-serif;
+    color: var(--azul-primario);
+}
+
+.frontEnd .boxIconCurso{
+    padding: 1rem;
+    background-color: var(--roxo-forte);
+    border-radius: 8px;
+}
+
+.backEnd .boxIconCurso{
+    padding: 1rem;
+    background-color: var(--amarelo-primario);
+    border-radius: 8px;
+}
