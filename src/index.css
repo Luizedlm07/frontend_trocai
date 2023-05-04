@@ -12,7 +12,7 @@
 html{
   scroll-behavior: smooth;
   font-size: 65.5%; 
-  color: #FFFF;
+  color: #000000;
   /* 10px */
 }
 
@@ -26,7 +26,7 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1B1F22;
+  background-color: var(--background-primario);
 }
 
 p{
