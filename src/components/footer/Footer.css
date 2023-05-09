@@ -2,68 +2,53 @@
 
 
 .footer {
+    position: fixed;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #01050D;
+    background-color: var(--preto);
     width: 100%;
-    height: 100%;
+    height: 60px;
 }
 
-
-.footerCopy {
+.inFooter {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1400px;
-    margin-top: 60px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgb(128, 128, 128, .1);
 }
 
-.logoFooter {
-    display: flex;
-    flex-direction: column;
-}
-
-.logoImg {
+.logoContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
+    width: 10rem;
 }
 
-.logoFooter p{
+.logoIcon {
+    width: 50px;
+}
+
+.inFooter p{
     font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
     color: #808080;
     margin: 0;
 }
 
-.footerCopy select {
-    width: 130px;
-    height: 40px;
-    color: #0057FF;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: 400;
-    border: none;
-}
-
-.lang {
-    background-color: #030D21;
-    padding: 0 10px;
-    border-radius: 4px;
-}
-
-
 .footerLinks {
     display: flex;
     justify-content: space-between;
     padding: 25px 0 100px 0;
     width: 1300px;
+}
+
+.inFooter ion-icon {
+    font-size: 15px;
+}
+
+.inFooter ion-icon:hover {
+    transform: none;
 }
 
 .footerLinks p {

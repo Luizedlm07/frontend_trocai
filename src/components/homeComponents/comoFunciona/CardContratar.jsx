@@ -1,12 +1,12 @@
 import './CardContratar.css';
 import { FaCheck } from "react-icons/fa";
-import logo from '../../../img/dinheiro.png';
+
 
 function CardContratar({tipo, preco, avista, checkItem }) {
     return(
         <div>
             <div className="cardContainer">
-                <img className='logoimg' src={logo} />
+             {/*   <img className='logoimg' src={logo} />*/}
                 <h2>{tipo}</h2>
                 <div className='items'>
                     <FaCheck className='checkIcon'/>

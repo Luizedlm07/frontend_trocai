@@ -1,27 +1,23 @@
 import './Footer.css';
-import logo from '../../img/logoRobo.png';
+import logo from '../../img/Logo.png';
+import '../../globalColors.module.css';
 
 function Footer(){
     return(
         <footer className="footer">
 
-            <div className='footerCopy'>
-                <div className="logoFooter">
-                    <div className="logoImg">
-                        <img src={logo} />
+            
+                <div className="inFooter">
+                    <div className="logoContainer">
+                        <img className="logoIcon" src={logo} alt="TrocAí"/>
                     </div>
-                    <p>&copy; 2022 | ROB3 - todos os direitos reservados</p>
+                    <p>&copy; 2023 | TrocAí - todos os direitos reservados</p>
+                    <div className="poweredBy">
+                        <p>
+                            Powered by: <ion-icon className="iconCoffee" name="cafe-outline"></ion-icon> Café Sem Açúcar | FEBASP
+                        </p>
+                    </div>
                 </div>
-
-
-            <div className="lang">
-                    <select name="lang">
-                        <option value="portugues">Português</option>
-                        <option value="ingles">English</option>
-                    </select>
-            </div>
-
-            </div>
 
         </footer>
     )

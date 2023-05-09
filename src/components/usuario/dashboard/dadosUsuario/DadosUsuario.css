@@ -1,0 +1,19 @@
+.conteinerUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 460px;
+    margin: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: var(--background-primario);
+    box-shadow: 5px 5px 10px 2px var(--lilas-primario), -5px -5px 10px 2px var(--azul-primario);
+}
+
+.dadosDoUsuario {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+}

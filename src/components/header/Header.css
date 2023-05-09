@@ -1,13 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-header {
+.header-userlogged {
     display: flex;
     background-color: var(--background-secundario);
-    box-shadow: var(--sombra) 0px 0px 4px 2px;
+    box-shadow: var(--sombra) 0px 0px 8px 2px;
 }
 
-input {
+.logo-icon {
+    width: 10rem;
+    height: auto;
+}
+
+.pesquisa {
     position: relative;
     height: 25px;
     width: 230px;
@@ -16,12 +21,16 @@ input {
     border-radius: 10px;
     background-color: var(--background-primario);
     border: none;
-    box-shadow: inset var(--sombra) 0px 1px 3px 1px;
+    box-shadow: inset var(--sombra) 0px 2px 3px 1px, var(--sombra) 0px 5px 15px -8px;
     background-image: url(../../img/search-outline.svg);
     background-position: 10px center;
     background-repeat: no-repeat;
     background-size: 20px;
     text-indent: 30px;
+}
+
+.pesquisa:focus {
+    outline: none;
 }
 
 .containerInput {
@@ -34,9 +43,15 @@ input {
 ion-icon {
     font-size: 30px;
 }
+
+ion-icon:hover {
+    transform: scale(1.3,1.3);
+}
 .containerLogo {
     display: flex;
     flex: 2 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {

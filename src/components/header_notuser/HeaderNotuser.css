@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.header-userlogged {
+    display: flex;
+    background-color: var(--background-secundario);
+    box-shadow: var(--sombra) 0px 0px 8px 2px;
+}
+
+.logo-icon {
+    width: 10rem;
+    height: auto;
+}
+
+.pesquisa {
+    position: relative;
+    height: 25px;
+    width: 230px;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--background-primario);
+    border: none;
+    box-shadow: inset var(--sombra) 0px 2px 3px 1px, var(--sombra) 0px 5px 15px -8px;
+    background-image: url(../../img/search-outline.svg);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-indent: 30px;
+}
+
+.pesquisa:focus {
+    outline: none;
+}
+
+.containerInput {
+    display: flex;
+    flex: 2.5 1;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-icon {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+ion-icon:hover {
+    transform: scale(1.3,1.3);
+}
+.containerLogo {
+    display: flex;
+    flex: 2 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    flex: 2 1;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
+    gap: 2px;
+}
+
+li {
+    font-size: 1.6rem;
+    list-style-type: none;
+}
+
+.link{
+    transition: all 0.4s ease-in-out;
+    display: inline;
+    padding: 0 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.link a {
+    transition: all 0.4s ease-in-out;
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.link:hover{
+    font-weight: bold;
+}
+
+.fotoPerfil{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.boxNavbar div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.buttonCadastro{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #DAA520;
+    padding: 0 2.2rem;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
+    height: 48px;
+}
+
+.buttonCadastro:hover{
+    background-color: #fff;
+    color: #141F33;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    .boxNavbar {
+      display: flex;
+      flex-direction: column;
+    }
+}

@@ -1,17 +1,18 @@
 /*import {useState, useEffect} from 'react';*/
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-/*import NavbarNotuser from '../components/navbar_notuser/NavbarNotuser';*/
+import Dashboard from '../components/usuario/dashboard/Dashboard'
 
 
-
-function Home(){
+function Usuario(){
+    console.log('Rodou')
     return (
         <div>
             <Header />
+            <Dashboard />
             <Footer />
         </div>
     )
 };
 
-export default Home;
+export default Usuario;

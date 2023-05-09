@@ -1,0 +1,27 @@
+.operacoes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: var(--background-primario);
+    box-shadow: 5px 5px 10px 2px var(--lilas-primario), -5px -5px 10px 2px var(--azul-primario);
+}
+
+.conteinerOperacoes {
+    display: flex;
+}
+
+.conteinerTrocas, .conteinerDoacoes {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px var(--sombra);
+    width: 400px;
+    height: 300px;
+}

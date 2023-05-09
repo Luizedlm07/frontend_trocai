@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react';
-import Navbar from '../components/navbar/Navbar';
+/*import {useState, useEffect} from 'react';*/
+import Header from '../components/header/Header';
 import InicioEquipe from '../components/equipeComponents/inicio/InicioEquipe';
 import Footer from '../components/footer/Footer';
 
@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer';
 function Equipe(){
     return (
        <div>
-            <Navbar />
+            <Header />
             <InicioEquipe />
             <Footer />
        </div>
