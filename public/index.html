@@ -1,65 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />   
-    <title>TrocAí</title>
-    <link rel="icon" href="../src/img/Union.png" />
-    <link rel="stylesheet" href="../src/components/navbar/Navbar.css">
-    <link rel="stylesheet" href="../src/index.css">
-    <link rel="stylesheet" href="../globalColors.module.css">
-  </head>
-  <body>
-    <header>
-      <div class="containerLogo">
-        <a href="" class="logo">Icone<img src="" alt=""></a>
-      </div>
-      <div class="containerInput">
-        <input type="text" name="Pesquisa" placeholder=" Busque um produto" id="">  
-      </div>
-      <nav>
-        <ul>
-          <li class="page_icon"><ion-icon name="person-outline"></ion-icon></li>
-          <li class="page_icon"><ion-icon name="chatbubbles-outline"></ion-icon></li>
-          <li class="page_icon"><ion-icon name="star-outline"></ion-icon></li>
-          <li class="page_icon"><ion-icon name="notifications-outline"></ion-icon></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <noscript>Enable JavaScript to ensure<a class="teste"href="https://userway.org">website accessibility</a></noscript>
-    <!--
-      <script>(
-        function () { 
-          var s = document.createElement("script"); 
-          s.setAttribute("data-account", "xHDSUQKusJ"); 
-          s.setAttribute("src", "https://cdn.userway.org/widget.js"); 
-          document.body.appendChild(s); 
-        }
-        )();
-        </script>
-    -->
-    <noscript>Enable JavaScript to ensure <a class="teste"href="https://userway.org">website accessibility</a></noscript>
-      <div vw class="enabled teste">
-        <div vw-access-button class="active"></div>
-          <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-          </div>
-      </div>
-      <!--
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
-      -->
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>page login</title>
+</head>
+
+
+<div class="login-container">
+  <h1>Login</h1>
+  <form style="text-align: center;">
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="E-mail"><br>
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+    <input type="submit" value="Entrar">
+  </form>
+  <div class="links">
+    <a href="#">Esqueci minha senha</a>
+    <label for="lembrar-me">Lembrar-me</label>
+    <input type="checkbox" id="lembrar-me" name="lembrar-me">
+  </div>
+  <div class="links">
+    <p>Não possui conta?</p>
+    <a href="#">Pois crie já!</a>
+  </div>
+</div>
