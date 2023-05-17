@@ -15,5 +15,19 @@
 .dadosDoUsuario {
     display: flex;
     flex-direction: column;
-    margin: 10px; 
+    margin: 4px; 
+}
+
+.inserirItemButton {
+    cursor: pointer;
+    color: var(--background-primario);
+    border: 2px solid var(--lilas-primario);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: var(--lilas-primario);
+}
+
+.inserirItemButton:hover {
+    color: var(--lilas-primario);
+    background-color: var(--background-primario);
 }

@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from '../../img/Logo.png';
+import logo from '../../img/LogoBranco.png';
 import '../../globalColors.module.css';
 
 function Footer(){
@@ -14,7 +14,7 @@ function Footer(){
                     <p>&copy; 2023 | TrocAí - todos os direitos reservados</p>
                     <div className="poweredBy">
                         <p>
-                            Powered by: <ion-icon className="iconCoffee" name="cafe-outline"></ion-icon> Café Sem Açúcar | FEBASP
+                            Powered by: Café Sem Açúcar | FEBASP
                         </p>
                     </div>
                 </div>

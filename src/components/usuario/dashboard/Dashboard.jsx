@@ -1,7 +1,7 @@
-import '../../../globalColors.module.css'
-import './Dashboard.css'
-import DadosUsuario from './dadosUsuario/DadosUsuario'
-import HistoricoUsuario from './historicoUsuario/HistoricoUsuario'
+import '../../../globalColors.module.css';
+import './Dashboard.css';
+import DadosUsuario from './dadosUsuario/DadosUsuario';
+import HistoricoUsuario from './historicoUsuario/HistoricoUsuario';
 
 
 function Dashboard () {

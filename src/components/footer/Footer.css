@@ -2,12 +2,10 @@
 
 
 .footer {
-    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: var(--preto);
     width: 100%;
     height: 60px;
@@ -15,25 +13,40 @@
 
 .inFooter {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
 }
 
 .logoContainer {
+    flex: 1 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
-    width: 10rem;
+    width: 15rem;
+    margin: 20px;
 }
 
 .logoIcon {
-    width: 50px;
+    width: 55px;
+    margin: 20px;
 }
 
 .inFooter p{
+    flex: 1 1;
     font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
     color: #808080;
-    margin: 0;
+    margin: 20px;
+}
+
+.poweredBy {
+    flex: 1 1;
+    margin: 20px;
 }
 
 .footerLinks {

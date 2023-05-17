@@ -18,10 +18,24 @@
 
 .conteinerTrocas, .conteinerDoacoes {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     margin: 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px 2px var(--sombra);
     width: 400px;
     height: 300px;
+}
+
+.conteinerTrocas h2, .conteinerDoacoes h2{
+    position: relative;
+}
+
+.boxItem {
+    display: flex;
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--sombra);
 }

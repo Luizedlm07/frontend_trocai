@@ -1,4 +1,4 @@
-import './NavbarNotuser.css'
+import './HeaderNotuser.css'
 import '../../globalColors.module.css'
 import { Link } from 'react-router-dom' 
 import logo from '../../img/Logo.png';
@@ -16,8 +16,15 @@ function HeaderNotuser(){
             </div>
             <nav>
                 <ul>
-                    <li className="page_icon"><ion-icon name="person-outline"></ion-icon></li>
-                    <li className="page_icon"><p>Faça login ou Cadastre-se</p></li>
+                    <Link className='Link' to="/login">
+                        <li className="page_icon"><ion-icon name="person-outline"></ion-icon></li>
+                        <p>Faça login</p>
+                    </Link>
+                    <Link className='Link' to="/cadastro">
+                        <li className="page_icon"><ion-icon name="person-add-outline"></ion-icon></li>
+                        <p>Cadastre-se</p>
+                    </Link>
+                    
                 </ul>
             </nav>
       </header>

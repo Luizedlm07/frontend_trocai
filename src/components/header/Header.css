@@ -3,8 +3,9 @@
 
 .header-userlogged {
     display: flex;
+    position: relative;
     background-color: var(--background-secundario);
-    box-shadow: var(--sombra) 0px 0px 8px 2px;
+    box-shadow: var(--background-primario) 0px 0px 8px 2px
 }
 
 .logo-icon {
@@ -38,6 +39,10 @@
     flex: 2.5 1;
     justify-content: center;
     align-items: center;
+}
+
+.toUsuario {
+    color: black;
 }
 
 ion-icon {
@@ -74,6 +79,16 @@ nav ul {
 li {
     font-size: 1.6rem;
     list-style-type: none;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu{
+    opacity: 0;
+    visibility: hidden;
 }
 
 .link{

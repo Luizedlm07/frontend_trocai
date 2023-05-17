@@ -1,0 +1,95 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cadastro-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-cadastro {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.input-cadastro {
+    border-radius: 15px;
+    /* define o raio dos cantos da borda como 5 pixels */
+    border: 1px solid #000000;
+    padding: 8px;
+    background-color: #e9e9e9;
+    border: none
+}
+
+.input-cadastro:hover {
+    opacity: 0.5;
+    background-color: #add8e6;
+}
+
+
+input[type="submit"] {
+    border-radius: 16px;
+    padding: 1px;
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: aliceblue;
+    font-size: 11px;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.5;
+    background-color: #add8e6;
+}
+
+.label-cadastro {
+    display: none;
+}
+
+.links {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.links a:hover {
+    opacity: 0.5;
+}
+
+
+.cadastro-container {
+    border-radius: 61px;
+    background: #ffffff;
+    box-shadow: 24px 24px 33px #b9e0ff,
+        -24px -24px 33px #8d72e1;
+    width: 500px;
+    height: 450px;
+}
+
+.cadastro-container h1 {
+    text-align: center;
+    height: 12px;
+    margin: 20px;
+    margin-top: 5px;
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
