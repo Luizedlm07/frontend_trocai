@@ -10,12 +10,16 @@
     border-radius: 10px;
     background-color: var(--background-primario);
     box-shadow: 5px 5px 10px 2px var(--lilas-primario), -5px -5px 10px 2px var(--azul-primario);
+    z-index: 1;
 }
 
 .dadosDoUsuario {
     display: flex;
     flex-direction: column;
-    margin: 4px; 
+    margin: 4px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .inserirItemButton {
@@ -25,9 +29,38 @@
     border-radius: 10px;
     padding: 5px;
     background-color: var(--lilas-primario);
+    margin: 30px;
 }
 
 .inserirItemButton:hover {
     color: var(--lilas-primario);
     background-color: var(--background-primario);
+}
+
+.dadosDoUsuario div {
+    display: flex;
+    justify-content: center;
+}
+
+.fotoPerfil {
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.fotoPerfil:hover {
+    opacity: 0.5;
+}
+
+.attImg {
+    position: fixed;
+    align-self: center;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.fotoPerfil:hover + .attImg, .attImg:hover{
+    opacity: 1;
 }

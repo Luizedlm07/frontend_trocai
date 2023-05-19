@@ -53,5 +53,9 @@
 .boxItem .divImg {
     min-width: 100px;
     width: 100px;
-    background-color: aqua;
+}
+
+.imgItem {
+    width: 100px;
+    height: 100px;
 }

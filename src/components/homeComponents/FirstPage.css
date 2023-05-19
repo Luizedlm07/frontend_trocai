@@ -9,7 +9,7 @@
     gap: 10px;
     flex-wrap: wrap;
     background-image: linear-gradient(to bottom right, var(--azul-secundario), var(--lilas-secundario), 0.5);
-    height: 450px;
+    height: 100%;
 }
 
 .firstConteiner {
@@ -47,11 +47,18 @@ article {
     border-radius: 30px 0px;
 }
 
+.itemTitleDesc {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .itemTitle {
     font-size: 25px;
     padding-left: 10px;
     font-weight: 500;
-    background-color: white;
+
 }
 
 .itemDesc {
@@ -59,7 +66,7 @@ article {
     padding-left: 10px;
     color: rgb(116, 116, 116);
     font-weight: 300;
-    background-color: white;
+
 }
 
 
