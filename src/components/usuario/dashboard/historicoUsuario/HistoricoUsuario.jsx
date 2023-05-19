@@ -1,22 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import './HistoricoUsuario.css';
 import '../../../../globalColors.module.css';
+import axios from 'axios';
+
 
 function HistoricoUsuario() {
-    const [trocas, setTrocas] = useState({});
-    const [doacoes, setDoacoes] = useState({});
+    const [operacoes, setOperacoes] = useState([]);
 
-    useEffect(() => {
-        fetch('')
-            .then(response => response.json())
-            .then(data => setTrocas(data));
-    }, []);
+    const getOperacoes = async () => {
 
+        try {
+        const response = await axios.get('http://localhost:8000/consulta_operacao?id_usuario=1');
+        const data = response.data;
+        setOperacoes(data)
+
+        } catch (error) {
+        console.error(error); // Manipule o erro aqui
+
+        }
+    };
     useEffect(() => {
-        fetch('')
-            .then(response => response.json())
-            .then(data => setDoacoes(data));
-    }, []);
+        getOperacoes()
+    }, [])
+
+    const trocas = operacoes.trocas
+    const doacoes = operacoes.doacoes
+    console.log(operacoes)
+    console.log('trocas', trocas) // índice 0 são trocas
+    console.log('doações', doacoes) // índice 1 são doações
 
     return (
 
@@ -25,24 +36,39 @@ function HistoricoUsuario() {
             <div className='conteinerOperacoes'>
                 <div className="conteinerTrocas">
                     <h2>Trocas</h2>
-                    {/* {itens.map(item => */}
-                        <div className='boxItem' key={trocas.id}>
-                            <img src="" alt="" />
-                            <h3 className='tituloItem'>{trocas.item}</h3>
-                            <p className='descricao'>{trocas.descricao}</p>
-                        </div>
-                        {/*  )} */}
+                    {operacoes.length === 0 ? (<p>Carregando...</p>) : (
+                        trocas.map((troca) =>    
+                            <div className='boxItem' key={troca['Operação ID']}>
+                                <div className='divImg'>
+                                    <img src='' alt="" />
+                                    <p>imagem</p>
+                                </div>
+                                <div>
+                                    <h3 className='tituloItem'>{troca['Item 1']} X {troca['Item 2']}</h3>
+                                    <p className='descricao'>Você trocou com {troca['Dono do Item 2']}</p>
+                                </div>
+                            </div>
+                        )
+                    )}
+
 
                 </div>
                 <div className="conteinerDoacoes">
                     <h2>Doações</h2>
-                    {/* {itens.map(item => */}
-                    <div className='boxItem' key={doacoes.id}>
-                        <img src="" alt="" />
-                        <h3 className='tituloItem'>{doacoes.item}</h3>
-                        <p className='descricao'>{doacoes.descricao}</p>
-                    </div>
-                    {/*  )} */}
+                    {operacoes.length === 0 ? (<p>Carregando...</p>) : (
+                        doacoes.map((doacao) =>    
+                            <div className='boxItem' key={doacao['Operação ID']}>
+                                <div className='divImg'>
+                                    <img src='' alt="" />
+                                    <p>imagem</p>
+                                </div>
+                                <div>
+                                    <h3 className='tituloItem'>{doacao['Item doado']}</h3>
+                                    <p className='descricao'>Você doou para / recebeu de {doacao['Receptor']}</p>
+                                </div>
+                            </div>
+                        )
+                    )}
                 </div>
             </div>
         </div>
