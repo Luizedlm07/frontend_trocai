@@ -11,7 +11,7 @@ function FirstPage() {
     const [itens, setItens] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/consulta_feed')
+        axios.get('http://localhost:8000/plataforma/consultar_feed')
             .then(response => setItens(response.data))
             .catch(error => console.error(error));
     }, []);
@@ -23,7 +23,7 @@ function FirstPage() {
             <div className='itensConteiner'>
                 {itens.length === 0 ? (<p>Carregando...</p>) : (
                     itens.map(item => (
-                    <div class="item">
+                    <div className="item">
                         <article>
                             <img className="itemImg" src={`http://localhost:8000/img?caminho=${item.imagem}`} alt="imagem"/>
                         </article>

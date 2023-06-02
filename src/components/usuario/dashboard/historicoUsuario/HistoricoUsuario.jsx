@@ -10,7 +10,7 @@ function HistoricoUsuario() {
     const getOperacoes = async () => {
 
         try {
-        const response = await axios.get('http://localhost:8000/consulta_operacao?id_usuario=1');
+        const response = await axios.get('http://localhost:8000/plataforma/consultar_operacao?id_usuario=1');
         const data = response.data;
         setOperacoes(data)
 
@@ -25,9 +25,6 @@ function HistoricoUsuario() {
 
     const trocas = operacoes.trocas
     const doacoes = operacoes.doacoes
-    console.log(operacoes)
-    console.log('trocas', trocas) // índice 0 são trocas
-    console.log('doações', doacoes) // índice 1 são doações
 
     return (
 

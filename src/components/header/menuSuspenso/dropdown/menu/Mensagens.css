@@ -1,0 +1,60 @@
+.conteinerMensagem {
+    display: flex;
+    width: 240px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 4px;
+    width: 100%;
+}
+  
+.sent {
+    text-align: right;
+    background-color: var(--azul-secundario);
+}
+
+.received {
+    text-align: left;
+    background-color: var(--lilas-secundario);
+    color: white;
+}
+
+.horario {
+    font-size: 10px;
+}
+
+.enviarMensagem {
+    display: flex;
+    position:relative;
+    justify-content: center;
+}
+
+#sendIcon {
+    font-size: 20px;
+    color: var(--lilas-primario);    
+    cursor: pointer;
+}
+
+.enviarMensagemInput {
+    position: relative;
+    height: 15px;
+    width: 200px;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: var(--background-primario);
+    border: none;
+    box-shadow: inset var(--sombra) 0px 2px 3px 1px, var(--sombra) 0px 5px 15px -8px;
+}
+
+.enviarMensagemInput:focus {
+    outline: none;
+}

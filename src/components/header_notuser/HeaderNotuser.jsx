@@ -17,11 +17,11 @@ function HeaderNotuser(){
             <nav>
                 <ul>
                     <Link className='Link' to="/login">
-                        <li className="page_icon"><ion-icon name="person-outline"></ion-icon></li>
+                        <li className="page_icon"><ion-icon id="headerIcon" name="person-outline"></ion-icon></li>
                         <p>Faça login</p>
                     </Link>
                     <Link className='Link' to="/cadastro">
-                        <li className="page_icon"><ion-icon name="person-add-outline"></ion-icon></li>
+                        <li className="page_icon"><ion-icon id="headerIcon" name="person-add-outline"></ion-icon></li>
                         <p>Cadastre-se</p>
                     </Link>
                     

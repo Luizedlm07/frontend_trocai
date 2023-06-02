@@ -4,11 +4,11 @@ import './FormInserirItem.css';
 import axios from 'axios'
 
 function FormInserirItem () {
-    const [imagem, setImagem] = useState(null)
+    const [imagem, setImagem] = useState()
     const [formValues, setFormValues] = useState({
         item: '',
         descricao: '',
-        id: 1,
+        id_usuario: 1,
     });
 
     const handleInputChange = (event) => {
@@ -24,20 +24,20 @@ function FormInserirItem () {
     };
 
     const handleSubmit = async event => {
-        const { item, descricao, id } = formValues
+        const { item, descricao, id_usuario } = formValues
         const formData = new FormData();
         formData.append('item', item);
         formData.append('descricao', descricao);
-        formData.append('id', id);
+        formData.append('id_usuario', id_usuario);
         formData.append('imagem', imagem);
 
         event.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:8000/registro', formData, {
+            const response = await axios.post('http://localhost:8000/produto/registrar_produto', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
-                  },
+                },
             })
             console.log(response.data)
         } catch (error) {

@@ -30,7 +30,7 @@ function FormCadastro() {
     console.log(formValues)
     if (email === confirmacao_email && senha === confirmacao_senha) {
       try {
-        const url = `http://localhost:8000/cadastro?nome_completo=${encodeURIComponent(
+        const url = `http://localhost:8000/usuario/cadastrar_usuario?nome_completo=${encodeURIComponent(
           nome_completo
         )}&nome_usuario=${encodeURIComponent(nome_usuario)}&email=${encodeURIComponent(
           email

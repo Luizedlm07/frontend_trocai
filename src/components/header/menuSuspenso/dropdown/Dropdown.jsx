@@ -1,49 +1,26 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react';
 import '../../../../globalColors.module.css';
 import './Dropdown.css';
+import Mensagens from './menu/Mensagens';
 
 function Dropdown (clickOn) {
     const { activeMenu } = clickOn;
-    const [mensagens, setMensagens] = useState({});
-    const [favoritos, setFavoritos] = useState({});
-    const [notificacoes, setNotificacoes] = useState({});
+    /*const [favoritos, setFavoritos] = useState({});
+    const [notificacoes, setNotificacoes] = useState({});*/
+    let favoritos = 'a'
+    let notificacoes = 'b'
 
-    console.log("drop", activeMenu);
-    /*
 
-    */
 
-    useEffect(() => {
-        fetch('')
-            .then(response => response.json())
-            .then(data => setMensagens(data));
-    }, []);
-
-    useEffect(() => {
-        fetch('')
-            .then(response => response.json())
-            .then(data => setFavoritos(data));
-    }, []);
-
-    useEffect(() => {
-        fetch('')
-            .then(response => response.json())
-            .then(data => setNotificacoes(data));
-    }, []);
 
 
     return (
         <div className='dropdownInvisible'> 
             <div className='dropdown'>
                 {activeMenu === 'mensagens' && (
-                <ul className='dropdown-menu'>
-                    <p>mensagens</p>
-                    <li className="dropdown-option" key={mensagens.id}>
-                        <h3 className='nomeUsuario'>{mensagens.nome}</h3>
-                        <p className='ultimaMensagem'>{mensagens.conteudo}</p>
-                    </li>
-                </ul>
-                )}
+                    <Mensagens />
+                )
+                }
                 {activeMenu === 'favoritos' && (
                 <ul className='dropdown-menu'>
                     <p>favoritos</p>

@@ -12,7 +12,7 @@ function FormLogin() {
       const handleSubmit = async (event) => {
         event.preventDefault()
         try {
-          const response = await axios.get('http://localhost:8000/login', {
+          const response = await axios.get('http://localhost:8000/usuario/login', {
             params: {
               email: email,
               senha: senha,
