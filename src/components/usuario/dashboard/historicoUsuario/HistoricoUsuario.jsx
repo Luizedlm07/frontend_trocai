@@ -37,7 +37,7 @@ function HistoricoUsuario() {
                         trocas.map((troca) =>    
                             <div className='boxItem' key={troca['Operação ID']}>
                                 <div className='divImg'>
-                                    <img className='imgItem' src={`http://localhost:8000/img?caminho=${troca['Imagem1']}`} alt="Imagem" />
+                                    <img className='imgItem' src={`http://localhost:8000/produto/${troca['Imagem1']}`} alt="Imagem" />
                                 </div>
                                 <div>
                                     <h3 className='tituloItem'>{troca['Item 1']} X {troca['Item 2']}</h3>
@@ -55,7 +55,7 @@ function HistoricoUsuario() {
                         doacoes.map((doacao) =>    
                             <div className='boxItem' key={doacao['Operação ID']}>
                                 <div className='divImg'>
-                                    <img className='imgItem' src={`http://localhost:8000/img?caminho=${doacao['Imagem1']}`} alt="Imagem" />
+                                    <img className='imgItem' src={`http://localhost:8000/produto/${doacao['Imagem1']}`} alt="Imagem" />
                                 </div>
                                 <div>
                                     <h3 className='tituloItem'>{doacao['Item doado']}</h3>

@@ -25,7 +25,7 @@ function FirstPage() {
                     itens.map(item => (
                     <div className="item">
                         <article>
-                            <img className="itemImg" src={`http://localhost:8000/img?caminho=${item.imagem}`} alt="imagem"/>
+                            <img className="itemImg" src={`http://localhost:8000/produto/${item.imagem}`} alt="imagem"/>
                         </article>
                         <section className="itemTitleDesc">
                             <h1 className="itemTitle">{item.item}</h1>
