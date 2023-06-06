@@ -12,7 +12,7 @@ function FormLogin() {
       const handleSubmit = async (event) => {
         event.preventDefault()
         try {
-          const response = await axios.get('http://localhost:8000/usuario/login', {
+          const response = await axios.get('http://trocai-api-gd42.onrender.com/usuario/login', {
             params: {
               email: email,
               senha: senha,

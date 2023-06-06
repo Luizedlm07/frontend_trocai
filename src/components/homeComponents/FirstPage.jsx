@@ -11,7 +11,7 @@ function FirstPage() {
     const [itens, setItens] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/plataforma/consultar_feed')
+        axios.get('http://trocai-api-gd42.onrender.com/plataforma/consultar_feed')
             .then(response => setItens(response.data))
             .catch(error => console.error(error));
     }, []);
@@ -25,7 +25,7 @@ function FirstPage() {
                     itens.map(item => (
                     <div className="item">
                         <article>
-                            <img className="itemImg" src={`http://localhost:8000/produto/${item.imagem}`} alt="imagem"/>
+                            <img className="itemImg" src={`http://trocai-api-gd42.onrender.com/produto/${item.imagem}`} alt="imagem"/>
                         </article>
                         <section className="itemTitleDesc">
                             <h1 className="itemTitle">{item.item}</h1>

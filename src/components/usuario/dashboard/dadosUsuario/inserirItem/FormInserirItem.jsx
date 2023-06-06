@@ -34,7 +34,7 @@ function FormInserirItem () {
         event.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:8000/produto/registrar_produto', formData, {
+            const response = await axios.post('http://trocai-api-gd42.onrender.com/produto/registrar_produto', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
