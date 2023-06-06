@@ -40,7 +40,7 @@ function Header(){
         event.preventDefault();
         
         try {
-          const response = await axios.get(`http://trocai-api-gd42.onrender.com/produto/pesquisar_itens?pesquisa=${pesquisa}`);
+          const response = await axios.get(`https://trocai-api-gd42.onrender.com/produto/pesquisar_itens?pesquisa=${pesquisa}`);
           console.log(response.data);
         } catch (error) {
           console.error(error);

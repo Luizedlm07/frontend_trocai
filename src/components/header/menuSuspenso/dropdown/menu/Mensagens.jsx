@@ -66,7 +66,7 @@ function Mensagens() {
     const handleSubmitMessages = async (e) => {
         e.preventDefault()
         try {
-            const url = `http://localhost:8000/plataforma/publicar_mensagem?conteudo=${encodeURIComponent(
+            const url = `https://trocai-api-gd42.onrender.com/plataforma/publicar_mensagem?conteudo=${encodeURIComponent(
                 mensagem
             )}&id_remetente=1&id_destinatario=${encodeURIComponent(
                 destinatario.id
